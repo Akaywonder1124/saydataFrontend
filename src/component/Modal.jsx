@@ -15,7 +15,7 @@ function Modal({ onClose }) {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "http://localhost:8000/my-router/uploadfile",
+          "https://saydata-backend-api.onrender.com//my-router/uploadfile",
           {
             method: "POST",
             body: formData,
