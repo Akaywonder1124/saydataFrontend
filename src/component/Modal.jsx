@@ -22,6 +22,7 @@ function Modal({ onClose }) {
           }
         );
         setIsLoading(false);
+        window.location.reload();
         onClose();
         if (response.ok) {
           const data = await response.json();
@@ -185,7 +186,7 @@ function Modal({ onClose }) {
 
 function LoadingMessage() {
   return (
-    <div className="text-white text-3xl font-bold">
+    <div className="text-white text-3xl max-md:text-md text-center font-bold">
       Transcribing, Please wait...
     </div>
   );
