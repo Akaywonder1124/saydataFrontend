@@ -15,7 +15,7 @@ function Modal({ onClose }) {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "https://saydata-backend-api.onrender.com//my-router/uploadfile",
+          "https://saydata-backend-api.onrender.com/my-router/uploadfile/",
           {
             method: "POST",
             body: formData,
@@ -84,7 +84,7 @@ function Modal({ onClose }) {
           </div>
           <div className="w-full mt-4">
             <label
-              for="selectField"
+              htmlFor="selectField"
               className="block text-[15px] font-[500] text-[#121212] mb-2"
             >
               Transcription Language
@@ -150,15 +150,15 @@ function Modal({ onClose }) {
           </div>
           <div className="w-full mt-4">
             <label
-              for="selectField"
-              class="block text-[15px] font-[500] text-[#121212] mb-2"
+              htmlFor="selectField"
+              className="block text-[15px] font-[500] text-[#121212] mb-2"
             >
               Import from Link
             </label>
             <input
               type="text"
               placeholder="Paste a Drobpox, Google Drive or Youtube URL here"
-              class="w-full p-2 border-2 border-gray-300 rounded-md  h-12 text-[#98A2B3] focus:outline-[#98A2B3]"
+              className="w-full p-2 border-2 border-gray-300 rounded-md  h-12 text-[#98A2B3] focus:outline-[#98A2B3]"
             />
           </div>
           <div className="flex gap-2 mt-4">
@@ -168,7 +168,7 @@ function Modal({ onClose }) {
               name="speakerIdentification"
               className="w-5 h-5 rounded-r-md"
             />
-            <label class="font-medium text-[#101928]">
+            <label className="font-medium text-[#101928]">
               Speaker Identification
             </label>
           </div>
@@ -184,6 +184,10 @@ function Modal({ onClose }) {
 }
 
 function LoadingMessage() {
-  return <div className="text-white text-md">Loading...</div>;
+  return (
+    <div className="text-white text-3xl font-bold">
+      Transcribing, Please wait...
+    </div>
+  );
 }
 export default Modal;

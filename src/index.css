@@ -24,4 +24,15 @@
   /* a {
     @apply text-sky-500 hover:underline;
   }*/
+  .pdf-page {
+    @apply p-4 bg-white;
+  }
+
+  .pdf-section {
+    @apply m-4 p-4;
+  }
+
+  .pdf-text {
+    @apply text-base font-serif;
+  }
 }

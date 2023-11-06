@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import files from "../lib/const/files";
 
 function RecentFiles() {
   const [data, setData] = useState([]);
