@@ -144,8 +144,8 @@ function Modal({ onClose }) {
             </div>
             <p className="text-center text-[13px] text-[#98A2B3]  max-md:text-[12px]">
               The maximum file size is 1GB for audio and 10GB for videos.
-              Supported formats: mp3, mp4, wav, caf, aiff, avi, rmvb, flv, m4a,
-              mov, wmv, wma
+              Supported formats: mp4, wav, caf, aiff, avi, rmvb, flv, m4a, mov,
+              wmv, wma
             </p>
           </div>
           <div className="w-full mt-4">
