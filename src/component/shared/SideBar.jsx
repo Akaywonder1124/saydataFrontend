@@ -21,7 +21,7 @@ function SideBar({ setIsSidebarOpen }) {
           />
         ))}
       </div>
-      <div className="mt-5">
+      <div>
         <UpgradeCard />
       </div>
     </div>
