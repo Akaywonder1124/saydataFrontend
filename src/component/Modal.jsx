@@ -138,7 +138,6 @@ function Modal({ onClose }) {
               <input
                 id="fileInput"
                 type="file"
-                accept=".pdf, .jpg, .jpeg, .png"
                 className="hidden"
                 onChange={handleFileInputChange}
               />
