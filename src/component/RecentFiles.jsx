@@ -78,7 +78,7 @@ function RecentFiles() {
 }
 function Loading() {
   return (
-    <div className="text-3xl max-md:text-md text-[#e0edff]">
+    <div className="text-3xl max-md:text-md text-[#0048AD] text-center font-semibold">
       Fetching data ....
     </div>
   );
