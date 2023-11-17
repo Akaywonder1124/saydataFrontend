@@ -24,7 +24,7 @@ export default DashboardCard;
 
 function BoxWrapper({ children }) {
   return (
-    <div className="flex item-center justify-start gap-4 bg-white rounded-sm p-4 flex-1 border border-gray-200 items-center shadow-sm">
+    <div className="flex item-center justify-start gap-4 bg-white rounded-sm p-4 flex-1 border border-gray-200 items-center shadow-sm ">
       {children}
     </div>
   );
